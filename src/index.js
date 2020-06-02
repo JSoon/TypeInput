@@ -1,3 +1,9 @@
-export { default as text } from './types/text';
-export { default as integer } from './types/integer';
-export { default as decimal } from './types/decimal';
+import text from './types/text';
+import integer from './types/integer';
+import decimal from './types/decimal';
+
+export {
+  text,
+  integer,
+  decimal,
+};
