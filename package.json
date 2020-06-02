@@ -1,12 +1,12 @@
 {
-  "name": "@jiahua/typeinput",
+  "name": "@jsoon/typeinput",
   "version": "1.0.0",
   "description": "输入数据类型控制工具模块",
   "main": "src/index.js",
   "scripts": {
     "test": "webpack-dev-server"
   },
-  "author": "JSoon",
+  "author": "J.Soon <serdeemail@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.10.1",
@@ -35,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JSoon/TypeInput.git"
+    "url": "git+https://github.com/JSoon/TypeInput.git"
   },
   "keywords": [
     "type",
