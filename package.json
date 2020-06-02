@@ -35,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JSoon/TypeInput.git"
+    "url": "https://github.com/JSoon/TypeInput.git"
   },
   "keywords": [
     "type",
