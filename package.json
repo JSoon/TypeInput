@@ -1,12 +1,12 @@
 {
-  "name": "typeinput",
+  "name": "@jiahua/typeinput",
   "version": "1.0.0",
-  "description": "",
+  "description": "输入数据类型控制工具模块",
   "main": "src/index.js",
   "scripts": {
     "test": "webpack-dev-server"
   },
-  "author": "",
+  "author": "JSoon",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.10.1",
@@ -29,5 +29,20 @@
   "dependencies": {
     "@babel/polyfill": "^7.10.1",
     "core-js": "^3.6.5"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSoon/TypeInput.git"
+  },
+  "keywords": [
+    "type",
+    "input"
+  ],
+  "bugs": {
+    "url": "https://github.com/JSoon/TypeInput/issues"
+  },
+  "homepage": "https://github.com/JSoon/TypeInput#readme"
 }
