@@ -14,4 +14,35 @@
 
 ## 使用方法
 
-完善中...
+1. 安装模块
+```
+npm i @financial-freedom/typeinput
+```
+2. 导入模块
+```js
+// 整体导入
+import * as typeinput from '@financial-freedom/typeinput';
+import {
+  text,
+  integer,
+  decimal,
+} from '@financial-freedom/typeinput';
+
+// 单独导入
+import text from '@financial-freedom/typeinput/src/types/text';
+import integer from '@financial-freedom/typeinput/src/types/integer';
+import decimal from '@financial-freedom/typeinput/src/types/decimal';
+```
+
+## 文档
+
+请查看源码 JSDoc 注释.
+
+## 浏览器兼容性
+
+```
+defaults
+> 5% in CN
+last 2 versions
+ie >= 10
+```
