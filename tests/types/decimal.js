@@ -7,6 +7,8 @@ const {
 describe('浮点数输入', () => {
   it('应该输出浮点数', () => {
     assert.equal(decimal('1.2'), '1.2');
+    assert.equal(decimal('1.'), '1.');
+    assert.equal(decimal('1.34.2'), '1.34');
     assert.equal(decimal('1a.b2-'), '1');
     assert.equal(decimal('1a.b2.-'), '1');
     assert.equal(decimal('-1a.b2.-', {
