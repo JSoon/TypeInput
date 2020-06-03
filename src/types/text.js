@@ -6,7 +6,7 @@
  * @param   {number}  length    最大文本长度
  * @returns {string}            文本字符串
  */
-export default function integer(input, {
+export default function text(input, {
   symbol = false,
   length = 20,
 } = {}) {
