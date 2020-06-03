@@ -1,6 +1,6 @@
 {
   "name": "@financial-freedom/typeinput",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "输入数据类型控制工具模块",
   "main": "src/index.js",
   "scripts": {
