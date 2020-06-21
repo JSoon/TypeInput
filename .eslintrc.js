@@ -17,10 +17,13 @@ module.exports = {
   extends: [
     'airbnb-base',
   ],
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 6,
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true
+    },
     sourceType: 'module',
-    parser: 'babel-eslint',
   },
   rules: {
     // #region ESlint规则
@@ -34,16 +37,22 @@ module.exports = {
     'import/extensions': ['off'],
     'import/no-unresolved': ['off'],
     'import/no-extraneous-dependencies': ['off'],
+    'import/prefer-default-export': ['off'],
     'func-names': ['off'],
     'linebreak-style': ['off'],
     'no-unused-vars': ['warn'],
     'no-useless-return': ['warn'],
     'no-use-before-define': ['error', 'nofunc'],
+    'no-unused-expressions': ['off'],
+    'no-param-reassign': ['warn'],
+    'brace-style': ['off'],
+    'no-underscore-dangle': ['warn'],
 
     // #endregion
   },
   overrides: [{
     files: [
+      '**/tests/*.{j,t}s?(x)',
       '**/__tests__/*.{j,t}s?(x)',
       '**/tests/unit/**/*.spec.{j,t}s?(x)',
     ],

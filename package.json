@@ -4,7 +4,8 @@
   "description": "输入数据类型控制工具模块",
   "main": "src/index.js",
   "scripts": {
-    "test": "webpack-dev-server"
+    "test": "webpack-dev-server",
+    "lint": "npx eslint --cache --fix --ext .js src/ tests/"
   },
   "author": "J.Soon <serdeemail@gmail.com>",
   "license": "MIT",
@@ -12,6 +13,7 @@
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "chai": "^4.2.0",
     "css-loader": "^3.5.3",
@@ -20,6 +22,8 @@
     "eslint-plugin-html": "^6.0.2",
     "eslint-plugin-import": "^2.20.2",
     "html-webpack-plugin": "^4.3.0",
+    "husky": "^2.4.0",
+    "lint-staged": "^8.2.0",
     "mocha": "^7.2.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
@@ -29,6 +33,14 @@
   "dependencies": {
     "@babel/polyfill": "^7.10.1",
     "core-js": "^3.6.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix --ext .js src/ tests/"
   },
   "directories": {
     "test": "tests"
