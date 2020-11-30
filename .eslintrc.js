@@ -60,6 +60,7 @@ module.exports = {
     }],
     'no-irregular-whitespace': 'off',
     'no-underscore-dangle': 'off',
+    'prefer-destructuring': 'off',
 
     // #endregion
   },
